@@ -1,0 +1,87 @@
+body{
+    background-color: rgb(250, 247, 243);
+}
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 45px;
+    background-color: white;
+    
+
+}
+.sectión__1{
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foto {
+  display:flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+.azul {
+    background-image:url(/imagenes/azul.PNG);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-size: 160px 28px;
+    background-repeat: no-repeat;
+    width: 154px;
+    height: 28px;
+    font-size: 11px;
+    color: white;
+}
+.azul__p{
+    padding:4px 8px;
+}
+.rojo {
+    background-image:url(/imagenes/rojo.PNG);
+    display: flex;
+    background-size: 139.35px 28px;
+    background-repeat: no-repeat;
+    width: 133.35px;
+    height: 28px;
+    font-size: 11px;
+    color: white;
+    align-items: center;
+}
+
+.rojo__p{
+    padding:4px 8px;
+    width: 128px;
+    height:13px ;
+
+}
+.imgt__1 img{
+    position: relative;
+    left: 100px;
+}
+
+.descripción{
+    width:355px;
+}
+.article section{
+    padding:10px;
+}
+h3 {
+    position: relative;
+    top: -25px;
+}
+.venta__directa{
+    width:370px;
+}
+.venta__directa-1{
+    display: flex;
+    justify-content:space-between;
+    border: solid 1px grey;
+    border-radius:4px;
+    width:350px;
+    height: 50px;
+    align-items: center;
+    padding:5px;}
+
+.precio__1{
+    color: red;
+}

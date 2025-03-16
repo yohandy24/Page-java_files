@@ -1,0 +1,27 @@
+{"monitores": [
+
+    
+    {   "id":1,
+        "nombre":"Odyssey g9",
+        "precio":7500.01,
+        "photo":"imagenes/monitor 1.jpeg",
+        "descripción":"Adisey UltraView 34 – Con una pantalla ultra ancha de 34 pulgadas y resolución 4K, este monitor está diseñado para productividad extrema. Su función de pantalla dividida permite trabajar con múltiples ventanas simultáneamente, y su tecnología BlueCare Pro minimiza la emisión de luz azul. Equipado con altavoces estéreo integrados y puertos USB-C de carga rápida, ofrece una solución completa para profesionales y entusiastas del entretenimiento digital."
+        
+    },
+    {   "id":2,
+        "nombre":"Samsung k5",
+        "precio":6500.01,
+        "photo":"/imagenes/monitor 2.jpeg",
+        "descripción":"Samsung VisionCurve X32 – Este monitor curvo de 32 pulgadas con resolución 5K redefine la experiencia visual con colores vibrantes y una frecuencia de actualización de 240 Hz. Su tecnología Quantum Display garantiza imágenes nítidas, mientras que el modo EyeShield reduce la fatiga ocular en sesiones prolongadas. Diseñado para creadores y gamers exigentes, cuenta con conectividad Thunderbolt 4 y un diseño sin bordes ultradelgado."
+
+        
+    },
+    {   "id":3,
+        "nombre":"Asus 5",
+        "precio":9500.01,
+        "photo":"/imagenes/monitor 3.jpeg",
+        "descripción":"Asus ProScreen T27 – Un monitor de 27 pulgadas con panel OLED que ofrece negros profundos y colores vivos con precisión profesional. Con una tasa de respuesta de 0.3 ms y compatibilidad con HDR1000, es ideal para edición de video y gaming de alto nivel. Su soporte ergonómico permite ajustes completos de altura, inclinación y rotación, mientras que la conectividad Wi-Fi Display elimina la necesidad de cables para una experiencia más limpia y moderna."
+    }
+    
+]
+}
