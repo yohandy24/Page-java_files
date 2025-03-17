@@ -1,5 +1,10 @@
 body{
     background-color: rgb(250, 247, 243);
+    font-family:'Heebo', sans-serif ;
+}
+.nav-1{
+    font-size:13px;
+    font-family:'Heebo', sans-serif ;
 }
 .article {
     display: flex;
@@ -60,7 +65,22 @@ body{
 }
 
 .descripción{
-    width:355px;
+    width:350px;
+    font-family: 'Heebo', sans-serif;
+    font-size: 13px;
+    color: #757575;
+    margin-right:20px;
+}
+.descripción p {
+    line-height: 24px;
+}
+.descripción a {
+    text-decoration-line: none;
+    color:#0496c9;
+    line-height: 24px;
+}
+.descripción h3,h5 {
+    color: black;
 }
 .article section{
     padding:10px;
@@ -72,7 +92,7 @@ h3 {
 .venta__directa{
     width:370px;
 }
-.venta__directa-1{
+.venta{
     display: flex;
     justify-content:space-between;
     border: solid 1px grey;
@@ -80,8 +100,78 @@ h3 {
     width:350px;
     height: 50px;
     align-items: center;
-    padding:5px;}
+    padding:5px;
+    font-size:13px;
+    font-family:'Heebo', sans-serif ;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+}
+    
 
 .precio__1{
     color: red;
+}
+.select{
+     
+    display: flex;
+    justify-content:space-between;
+    border: solid 1px grey;
+    border-radius:4px;
+    width:350px;
+    height: 45px;
+    align-items: center;
+    padding:5px;
+    font-size:13px;
+    font-family:'Heebo', sans-serif ;
+    margin-bottom: 20px;
+
+
+}
+
+select {
+    border: none;
+    outline: none;
+    color: #757575;
+    font-size:13px;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    width:361.46px;
+
+}
+
+.yellow {
+    border-radius:3px;
+    background-color: #ffba08;
+    color: white;
+    height: 45px;
+    font-size:14px;
+    padding: 0 14px;
+    width:165px;
+}
+.blue {
+    border-radius:3px;
+    background-color: #0496c9;;
+    color: white;
+    height: 45px;
+    font-size:14px;
+    padding: 0 14px;
+    width:165px;
+
+}
+
+.entrega p {
+    font-size:13px;
+    line-height: 24px;
+    padding-top: 2px;
+}
+
+.entrega li {
+    color: #757575;
+    font-size: 13px;
+    padding: 5px 0 5px 0;
+    line-height: 24px;
 }
