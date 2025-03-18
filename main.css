@@ -1,6 +1,10 @@
 body{
-    background: color #bec3c7;;
+    background: color #bec3c7;; 
 }
+.body {
+
+}
+
 
 
 .nav {
@@ -95,6 +99,7 @@ article {
 }
 .section-1{
     display: flex;
+    flex-wrap: wrap;
  
 
 }
@@ -109,25 +114,29 @@ article {
 }
  
 .garantia {
-    height:86vh;
-    width: 1350px;
-
-
-}
-
-.fondo-1{
-    height:86vh;
-    width: 1350px;
-    z-index:-1;
+    padding: 15px;  /* Asegura espacio interno alrededor de la imagen */
     position: relative;
 }
-.garantia-p{
+
+.garantia-p {
     position: absolute;
     font-size: 40px;
-    left: 33%;
+    top: 15%;            /* Posiciona el elemento en el centro vertical */
+    left: 50%;           /* Posiciona el elemento en el centro horizontal */
+    transform: translate(-50%, -50%);
     color: white;
- 
+
+    
 }
+
+
+
+.garantia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Esto asegura que la imagen se ajuste correctamente */
+}
+
 .superofertas {
     margin: 3px;
 
@@ -199,5 +208,10 @@ section h2 {
 }
 .superofertas-1  img {
     width: 55%;
+    
+}
+
+
+@media screen and (max-with:900){
     
 }
