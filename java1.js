@@ -29,7 +29,6 @@ fetch("productos.json")
 /*esto es para el nav responsive 770px*/ 
 
 const barra__770px = document.querySelector(".barra__770px")
-barra__770px.insertAdjacentHTML("beforeend",` <a href="" class=""><i class="fa-sharp fa-solid fa-cart-shopping carrito"></i></a>`),
 
 
 submit.addEventListener("click",()=>{
