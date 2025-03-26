@@ -2,7 +2,6 @@ fetch("productos.json")
 .then(responsive => responsive.json())
 .then(data => {
     
-
     const  foto = document.querySelector(".foto")
     const  urlParams = new URLSearchParams(window.location.search)
     const  id = parseInt( urlParams.get("id"));
@@ -11,6 +10,8 @@ fetch("productos.json")
     imgt__1.classList.add(`imgt__1`)
     imgt__1.innerHTML = `<img src="${desamoni.photo}">`
     foto.appendChild(imgt__1)
+   // tilte.innerHTML = `${desamoni.nombre}` no se puede porque el innerhtml solo afecta al body 
+   document.title = `${desamoni.nombre}`
     // esta es la parte de la foto
 
 

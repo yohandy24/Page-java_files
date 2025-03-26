@@ -45,6 +45,19 @@ submit.addEventListener("click",()=>{
     }
 })
 
+/*hacer cerrar el nav*/
+const nav__left = document.getElementById("nav__left")
+const cerrar = document.querySelector(".x")
+const bar = document.querySelector(".bar")
+
+cerrar.addEventListener("click",()=> {
+    nav__left.classList.remove("active")
+
+})
+
+bar.addEventListener("click",()=> {
+    nav__left.classList.add("active")
+})
 
 
 
