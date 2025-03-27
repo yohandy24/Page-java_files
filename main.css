@@ -1,16 +1,23 @@
 body{
-    background: color #bec3c7;; 
+    background: color #bec3c7;
 }
 
+header {
+    position:sticky;
+    top: 0;
+    z-index: 100000;
+    padding:5px 0 0 0;
+    background-color: #0e95c6;
+    height:70px;
 
-
+}
 
 .nav {
-    position:sticky;
     display: flex;
-    background-color: #0e95c6;
-    position:sticky;
     align-items: center;
+    z-index: 1000;
+    justify-content: space-between;
+    
     
 }
 .nav-1{
@@ -19,10 +26,9 @@ body{
     justify-content: space-around;
     align-items: center;
     width:100%;
-    height: 70px;;
+    height: 70px;
     font-size:13px;
     font-family:'Heebo', sans-serif ;
-    padding:0 10px 0 0;
    
 
     
@@ -99,11 +105,9 @@ button {
     z-index: 1;
    
 }
-.buscador-1{
-    display: flex;
-    background-color: #0e95c6;
-    flex-wrap: wrap;
 
+.b-1{
+    height:70vh;
 }
 a .carrito{
     display:none ; 
@@ -113,8 +117,7 @@ a .carrito{
 }
 
 .barra__770px{
-   display: flex;
-   justify-content: space-between;
+   margin:0 15px 0 15px ;
 }
 .barra__770px i {
     color: white;
@@ -173,6 +176,23 @@ a .carrito{
     height: 36px;
     margin-left:20PX;
 }
+
+
+/* esta parte es sobre el la busqueda*/
+.buscador-1 {
+    background-color: #f9f9f9;
+    position: relative;
+    margin: auto;
+    width: 850px;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.b-1{
+    height:70vh;
+}
+/**/
 article {
     margin:15px;
     background-color: #f9f9f9;
@@ -181,6 +201,9 @@ article {
     display: flex;
     overflow-y:hidden;
     overflow-x: scroll;
+    padding-bottom: 20px;
+    margin-bottom:20px;
+
  
 
 }
@@ -259,12 +282,18 @@ section h2 {
     
     
 }
+.producto {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding:5px;
+}
 .productos p {
     width:200px;
 }
 .productos a {
     font-size: 20px;
     color: rgb(0, 0, 0);
+    text-decoration: none;
 
 }
 
@@ -316,12 +345,35 @@ section h2 {
     
 }
 
+
+.footer-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10px 0 10px;
+
+}
+.footer__div{
+    padding: 10px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Heebo', sans-serif;
+    color: #757575;
+
+}
+.footer__div h2{
+    color: rgb(50, 48, 48);
+    font-size: 13px;
+}
+
 .Logo-1{
     display: none;
 }
 
 
 @media screen and (max-width: 900px){
+
     .nav__parrafo{
         display: none;
     }
@@ -331,10 +383,19 @@ section h2 {
     .Logo-1{
         display:block;
     }
+
+    .buscador-1 {
+        width: 280px;
+        
+    }
     
 }
 
 @media screen and (max-width: 770px){
+    .nav-1{
+        width: auto;
+        margin:0 10px 0 10xp;
+    }
     .nav-1 a {
         display: none;
     }
@@ -346,6 +407,14 @@ section h2 {
 
      
     }
+    .Logo{
+        object-fit: contain;
+        width: auto;
+        padding: 0 ;
+        position: relative;
+        bottom: 0px;}
+    
+    
     .nav {
         display: inline;
 
@@ -358,7 +427,6 @@ section h2 {
     .barra__770px{
         display: flex;
         justify-content: space-between;
-        padding:10px 16px 0 16px;
     }
     .bar{
         border:none;

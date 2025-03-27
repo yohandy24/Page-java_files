@@ -1,111 +1,85 @@
-{"monitores": [
-
-    
-    {   "id":1,
-        "nombre":"Odyssey g9",
-        "precio":7500.01,
-        "photo":"imagenes/monitor 1.jpeg",
-        "descripción":"Adisey UltraView 34 – Con una pantalla ultra ancha de 34 pulgadas y resolución 4K, este monitor está diseñado para productividad extrema. Su función de pantalla dividida permite trabajar con múltiples ventanas simultáneamente, y su tecnología BlueCare Pro minimiza la emisión de luz azul. Equipado con altavoces estéreo integrados y puertos USB-C de carga rápida, ofrece una solución completa para profesionales y entusiastas del entretenimiento digital."
-        
-    },
-    {   "id":2,
-        "nombre":"Samsung k5",
-        "precio":6500.01,
-        "photo":"/imagenes/monitor 2.jpeg",
-        "descripción":"Samsung VisionCurve X32 – Este monitor curvo de 32 pulgadas con resolución 5K redefine la experiencia visual con colores vibrantes y una frecuencia de actualización de 240 Hz. Su tecnología Quantum Display garantiza imágenes nítidas, mientras que el modo EyeShield reduce la fatiga ocular en sesiones prolongadas. Diseñado para creadores y gamers exigentes, cuenta con conectividad Thunderbolt 4 y un diseño sin bordes ultradelgado."
-
-        
-    },
-    {   "id":3,
-        "nombre":"Asus 5",
-        "precio":9500.01,
-        "photo":"/imagenes/monitor 3.jpeg",
-        "descripción":"Asus ProScreen T27 – Un monitor de 27 pulgadas con panel OLED que ofrece negros profundos y colores vivos con precisión profesional. Con una tasa de respuesta de 0.3 ms y compatibilidad con HDR1000, es ideal para edición de video y gaming de alto nivel. Su soporte ergonómico permite ajustes completos de altura, inclinación y rotación, mientras que la conectividad Wi-Fi Display elimina la necesidad de cables para una experiencia más limpia y moderna."
-    },
-    {   "id":4,
-        "nombre":"Samsung k5",
-        "precio":6500.01,
-        "photo":"/imagenes/monitor 2.jpeg",
-        "descripción":"Samsung VisionCurve X32 – Este monitor curvo de 32 pulgadas con resolución 5K redefine la experiencia visual con colores vibrantes y una frecuencia de actualización de 240 Hz. Su tecnología Quantum Display garantiza imágenes nítidas, mientras que el modo EyeShield reduce la fatiga ocular en sesiones prolongadas. Diseñado para creadores y gamers exigentes, cuenta con conectividad Thunderbolt 4 y un diseño sin bordes ultradelgado."
-
-        
-    },
-    {   "id":5,
-        "nombre":"Asus 5",
-        "precio":9500.01,
-        "photo":"/imagenes/monitor 3.jpeg",
-        "descripción":"Asus ProScreen T27 – Un monitor de 27 pulgadas con panel OLED que ofrece negros profundos y colores vivos con precisión profesional. Con una tasa de respuesta de 0.3 ms y compatibilidad con HDR1000, es ideal para edición de video y gaming de alto nivel. Su soporte ergonómico permite ajustes completos de altura, inclinación y rotación, mientras que la conectividad Wi-Fi Display elimina la necesidad de cables para una experiencia más limpia y moderna."
-    },
-    {   "id":6,
-        "nombre":"Samsung k5",
-        "precio":6500.01,
-        "photo":"/imagenes/monitor 2.jpeg",
-        "descripción":"Samsung VisionCurve X32 – Este monitor curvo de 32 pulgadas con resolución 5K redefine la experiencia visual con colores vibrantes y una frecuencia de actualización de 240 Hz. Su tecnología Quantum Display garantiza imágenes nítidas, mientras que el modo EyeShield reduce la fatiga ocular en sesiones prolongadas. Diseñado para creadores y gamers exigentes, cuenta con conectividad Thunderbolt 4 y un diseño sin bordes ultradelgado."
-
-        
-    },
-    {   "id":7,
-        "nombre":"Asus 5",
-        "precio":9500.01,
-        "photo":"/imagenes/monitor 3.jpeg",
-        "descripción":"Asus ProScreen T27 – Un monitor de 27 pulgadas con panel OLED que ofrece negros profundos y colores vivos con precisión profesional. Con una tasa de respuesta de 0.3 ms y compatibilidad con HDR1000, es ideal para edición de video y gaming de alto nivel. Su soporte ergonómico permite ajustes completos de altura, inclinación y rotación, mientras que la conectividad Wi-Fi Display elimina la necesidad de cables para una experiencia más limpia y moderna."
-    },
-    {   "id":8,
-        "nombre":"Samsung k5",
-        "precio":6500.01,
-        "photo":"/imagenes/monitor 2.jpeg",
-        "descripción":"Samsung VisionCurve X32 – Este monitor curvo de 32 pulgadas con resolución 5K redefine la experiencia visual con colores vibrantes y una frecuencia de actualización de 240 Hz. Su tecnología Quantum Display garantiza imágenes nítidas, mientras que el modo EyeShield reduce la fatiga ocular en sesiones prolongadas. Diseñado para creadores y gamers exigentes, cuenta con conectividad Thunderbolt 4 y un diseño sin bordes ultradelgado."
-
-        
-    },
-    {   "id":9,
-        "nombre":"Asus 5",
-        "precio":9500.01,
-        "photo":"/imagenes/monitor 3.jpeg",
-        "descripción":"Asus ProScreen T27 – Un monitor de 27 pulgadas con panel OLED que ofrece negros profundos y colores vivos con precisión profesional. Con una tasa de respuesta de 0.3 ms y compatibilidad con HDR1000, es ideal para edición de video y gaming de alto nivel. Su soporte ergonómico permite ajustes completos de altura, inclinación y rotación, mientras que la conectividad Wi-Fi Display elimina la necesidad de cables para una experiencia más limpia y moderna."
-    },
-    {   "id":10,
-        "nombre":"Samsung k5",
-        "precio":6500.01,
-        "photo":"/imagenes/monitor 2.jpeg",
-        "descripción":"Samsung VisionCurve X32 – Este monitor curvo de 32 pulgadas con resolución 5K redefine la experiencia visual con colores vibrantes y una frecuencia de actualización de 240 Hz. Su tecnología Quantum Display garantiza imágenes nítidas, mientras que el modo EyeShield reduce la fatiga ocular en sesiones prolongadas. Diseñado para creadores y gamers exigentes, cuenta con conectividad Thunderbolt 4 y un diseño sin bordes ultradelgado."
-
-        
-    },
-    {   "id":11,
-        "nombre":"Asus 5",
-        "precio":9500.01,
-        "photo":"/imagenes/monitor 3.jpeg",
-        "descripción":"Asus ProScreen T27 – Un monitor de 27 pulgadas con panel OLED que ofrece negros profundos y colores vivos con precisión profesional. Con una tasa de respuesta de 0.3 ms y compatibilidad con HDR1000, es ideal para edición de video y gaming de alto nivel. Su soporte ergonómico permite ajustes completos de altura, inclinación y rotación, mientras que la conectividad Wi-Fi Display elimina la necesidad de cables para una experiencia más limpia y moderna."
-    },
-    {   "id":12,
-        "nombre":"Samsung k5",
-        "precio":6500.01,
-        "photo":"/imagenes/monitor 2.jpeg",
-        "descripción":"Samsung VisionCurve X32 – Este monitor curvo de 32 pulgadas con resolución 5K redefine la experiencia visual con colores vibrantes y una frecuencia de actualización de 240 Hz. Su tecnología Quantum Display garantiza imágenes nítidas, mientras que el modo EyeShield reduce la fatiga ocular en sesiones prolongadas. Diseñado para creadores y gamers exigentes, cuenta con conectividad Thunderbolt 4 y un diseño sin bordes ultradelgado."
-
-        
-    },
-    {   "id":13,
-        "nombre":"Asus 5",
-        "precio":9500.01,
-        "photo":"/imagenes/monitor 3.jpeg",
-        "descripción":"Asus ProScreen T27 – Un monitor de 27 pulgadas con panel OLED que ofrece negros profundos y colores vivos con precisión profesional. Con una tasa de respuesta de 0.3 ms y compatibilidad con HDR1000, es ideal para edición de video y gaming de alto nivel. Su soporte ergonómico permite ajustes completos de altura, inclinación y rotación, mientras que la conectividad Wi-Fi Display elimina la necesidad de cables para una experiencia más limpia y moderna."
-    },
-    {   "id":14,
-        "nombre":"Samsung k5",
-        "precio":6500.01,
-        "photo":"/imagenes/monitor 2.jpeg",
-        "descripción":"Samsung VisionCurve X32 – Este monitor curvo de 32 pulgadas con resolución 5K redefine la experiencia visual con colores vibrantes y una frecuencia de actualización de 240 Hz. Su tecnología Quantum Display garantiza imágenes nítidas, mientras que el modo EyeShield reduce la fatiga ocular en sesiones prolongadas. Diseñado para creadores y gamers exigentes, cuenta con conectividad Thunderbolt 4 y un diseño sin bordes ultradelgado."
-
-        
-    },
-    {   "id":15,
-        "nombre":"Asus 5",
-        "precio":9500.01,
-        "photo":"/imagenes/monitor 3.jpeg",
-        "descripción":"Asus ProScreen T27 – Un monitor de 27 pulgadas con panel OLED que ofrece negros profundos y colores vivos con precisión profesional. Con una tasa de respuesta de 0.3 ms y compatibilidad con HDR1000, es ideal para edición de video y gaming de alto nivel. Su soporte ergonómico permite ajustes completos de altura, inclinación y rotación, mientras que la conectividad Wi-Fi Display elimina la necesidad de cables para una experiencia más limpia y moderna."
-    }
-    
-]
-}
+{
+    "monitores": [
+      {
+        "id": 1,
+        "nombre":"Samsung Odyssey G9",
+        "marca":"Samsung",
+        "precio": 34999.99,
+        "photo": "imagenes/monitor 1.jpeg",
+        "descripción": "Monitor curvo ultraancho de 49 pulgadas con resolución QHD, tasa de refresco de 240Hz y tecnología Quantum Mini LED."
+      },
+      {
+        "id": 2,
+        "nombre":"LG UltraGear 32GQ950-B",
+        "marca":"LG",
+        "precio": 28999.00,
+        "photo": "imagenes/monitor 2.jpeg",
+        "descripción": "Monitor gaming 4K UHD de 32 pulgadas con tecnología Nano IPS y compatibilidad con NVIDIA G-Sync."
+      },
+      {
+        "id": 3,
+        "nombre":"Asus ROG Swift PG32UQX",
+        "marca":"Asus",
+        "precio": 39999.00,
+        "photo": "imagenes/monitor 3.jpeg",
+        "descripción": "Monitor de 32 pulgadas con resolución 4K HDR, panel IPS y DisplayHDR 1400."
+      },
+      {
+        "id": 4,
+        "nombre":"Dell Alienware AW3423DW",
+        "marca":"Dell",
+        "precio": 29999.00,
+        "photo": "imagenes/monitor 2.jpeg",
+        "descripción": "Monitor OLED curvo de 34 pulgadas con resolución QD-OLED y tasa de refresco de 175Hz."
+      },
+      {
+        "id": 5,
+        "nombre":"Gigabyte M32U",
+        "marca":"Gigabyte",
+        "precio": 18999.00,
+        "photo": "imagenes/monitor 3.jpeg",
+        "descripción": "Monitor gaming 4K UHD de 32 pulgadas con panel IPS y tasa de refresco de 144Hz."
+      },
+      {
+        "id": 6,
+        "nombre":"Acer Predator X34",
+        "marca":"Acer",
+        "precio": 24999.00,
+        "photo": "imagenes/monitor 2.jpeg",
+        "descripción": "Monitor curvo de 34 pulgadas con resolución QHD y tecnología NVIDIA G-Sync Ultimate."
+      },
+      {
+        "id": 7,
+        "nombre":"MSI Optix MAG274QRF-QD",
+        "marca":"MSI",
+        "precio": 16999.00,
+        "photo": "imagenes/monitor 3.jpeg",
+        "descripción": "Monitor gaming de 27 pulgadas con panel Rapid IPS y tecnología Quantum Dot."
+      },
+      {
+        "id": 8,
+        "nombre":"BenQ EX3501R",
+        "marca":"BenQ",
+        "precio": 21999.00,
+        "photo": "imagenes/monitor 2.jpeg",
+        "descripción": "Monitor curvo ultrawide de 35 pulgadas con resolución 3440x1440 y tecnología HDR."
+      },
+      {
+        "id": 9,
+        "nombre":"ViewSonic Elite XG320U",
+        "marca":"ViewSonic",
+        "precio": 20999.00,
+        "photo": "imagenes/monitor 3.jpeg",
+        "descripción": "Monitor gaming 4K UHD de 32 pulgadas con DisplayHDR 600 y HDMI 2.1."
+      },
+      {
+        "id": 10,
+        "nombre":"Philips Momentum 558M1RY",
+        "marca": "Philips",
+        "precio": 32999.00,
+        "photo": "imagenes/monitor 2.jpeg",
+        "descripción": "Monitor de 55 pulgadas con resolución 4K HDR, panel VA y sistema de iluminación Ambiglow."
+      }
+    ]
+  }
+  
