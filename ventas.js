@@ -1,3 +1,11 @@
+const agregar = document.querySelector(".yellow")
+
+const blue = document.querySelector(".blue")
+const cantidad = document.querySelector(".cantidad__")
+let carritotext = document.querySelectorAll(".carrito__texto")
+const nav__right__below = document.querySelector(".nav__right-below")
+let compras = []
+pusharticulo ()
 fetch("productos.json")
 .then(responsive => responsive.json())
 .then(data => {
@@ -6,6 +14,12 @@ fetch("productos.json")
     const article = document.querySelector(".article")
     const buscador__1 = document.querySelector(".buscador-1") 
     const  foto = document.querySelector(".foto")
+    
+   
+  
+    
+ 
+    /*conseguir el id del sitio jjj */
     const  urlParams = new URLSearchParams(window.location.search)
     const  id = parseInt( urlParams.get("id"));
     const desamoni = data.monitores.find(item =>item.id === id)
@@ -34,12 +48,16 @@ fetch("productos.json")
     precio__1.innerHTML = `RD$ ${desamoni.precio}`
 
     function buscar(){
-
         const escrito = barra.value.toLowerCase()
+        if (escrito.length > 0) {
+            
+
+    
         buscador__1.innerHTML = ""
         const resultados = data.monitores.filter(item =>
         item.nombre.toLowerCase().includes(escrito) ||
-        item.marca.toLowerCase().includes(escrito))
+        item.marca.toLowerCase().includes(escrito)) 
+        
 
         resultados.forEach(producto =>{
 
@@ -57,7 +75,8 @@ fetch("productos.json")
         buscador__1.appendChild(productodiv);
         buscador__1.classList.add(`b-1`)
     })
-        
+      } 
+
       
     }
     submit.addEventListener("click",buscar)
@@ -72,12 +91,46 @@ fetch("productos.json")
     article.addEventListener("click",()=>{
         buscador__1.classList.remove(`b-1`)
         buscador__1.innerHTML = ""
-
+    
+    
 
     })
+        /* anadir precio en el carrito */ 
+        agregar.addEventListener("click", ()=>{
+          
+                let cantidad1 = cantidad.value
+                var multiplicación = parseInt(cantidad1) * desamoni.precio
+                let articulo = {"id": desamoni.id, "cantidad":cantidad1, "photo":desamoni.photo}
+                
+
+                compras.forEach(art =>{
+                    if (art.id == articulo.id){
+                        console.log("el articulo ya existe")
+
+                    }
+                    else{
+                        compras.push(articulo)
+                        pusharticulo()
+
+                    }
+                })
+    
+
+
+                    return articulo
+        
+        })
+       
+    
+       
+
+
+
+
 
    
 })
+
 
 const nav__left = document.getElementById("nav__left")
 const cerrar = document.querySelector(".x")
@@ -90,6 +143,85 @@ cerrar.addEventListener("click",()=> {
 
 bar.addEventListener("click",()=> {
     nav__left.classList.add("active")
+    
+})
+const body = document.querySelector(".article")
+let carritos = document.querySelector(".carrito")
+const nav__right = document.querySelector("#nav__right")
+const x2 = document.querySelector(".x-2")
+const barra__770px =document.querySelector(".barra__770px")
+const nav_1 = document.querySelector(".nav-1")
+
+let monster = carritos.innerHTML
+/*agregar y quitar barras laterales*/
+
+
+   carritos.addEventListener("click",()=>{
+    nav__right.classList.add("active")
+   })
+
+x2.addEventListener("click",()=>{
+    nav__right.classList.remove("active")
+})
+body.addEventListener("click",()=>{
+    nav__right.classList.remove("active")
+    nav__left.classList.remove("active")
+
+})
+
+document.addEventListener("click",()=>{
+   if(nav__left.classList.contains("active")){
+    nav__right.classList.remove("active")
+    
+   }
+
+
+
+})
+
+/* agregar el pinche carrito culero que me tiene jarto */ 
+window.addEventListener("resize",()=>{
+    if(window.matchMedia("(max-width: 770px)").matches){
+        barra__770px.appendChild(carritos)
+    }
+    else{
+        nav_1.appendChild(carritos)
+
+    }
+
 })
 
 
+/*FUNCIÓN DE AGREGAR ARTICULOS EN EL NAV-RIGHT */ 
+function pusharticulo (){
+    if (compras.length >= 1){
+        compras.forEach(art =>{
+            let div__below = document.createElement("div")
+            div__below.classList.add("div__below")
+            div__below.innerHTML = `<div><img class src = "${art.photo}"></div>   <div ><div></div></div> `
+            nav__right__below.appendChild(div__below)
+            
+        })
+        /*ver carito de compras*/ 
+        const vercarito = document.createElement("button")
+        vercarito.textContent = "Ver carrito de Compras"
+        vercarito.classList.add("vercarito")
+        nav__right__below.appendChild(vercarito)
+        /*Pago seguro*/
+        const pagoSeguro = document.createElement("button")
+        pagoSeguro.textContent = "Pago Seguro"
+        pagoSeguro.classList.add("pagoseguro")
+        nav__right__below.appendChild(pagoSeguro)
+        
+       
+
+
+      
+    }
+    else{
+        let vacio = document.createElement("p")
+        vacio.textContent ="Su carro esta vacío, por favor siga navegando en ShopMundo para añadir nuevos productos a su carro ..."
+        vacio.classList.add("vacio")
+        nav__right__below.appendChild(vacio)
+    }
+}
