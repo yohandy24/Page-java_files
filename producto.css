@@ -224,7 +224,7 @@ a .carrito{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 250px;
+    width: 310px;
     height: 75px;
     color:white;
     font-size: 10px;
@@ -244,16 +244,20 @@ a .carrito{
 
 .vercarito{
     color: #0496c9;
-    border: solid black 1px;
+    border: solid #d9d9d9 1px;
     font-family:'Heebo', sans-serif ;
-    margin: 10px;
+    width: 100%;
+    padding: 11px 20px;
+    margin-bottom: 10px;
     
 }
 .pagoseguro{
     color: white;
     background-color: #0496c9;
     font-family:'Heebo', sans-serif ;
-    margin: 10px;
+    width: 100%;
+    padding: 11px 20px;
+    
 }
 .vacio{
     text-align: center;
@@ -262,6 +266,45 @@ a .carrito{
     margin: 10px;
  
 }
+
+.nav__right-below{
+    width: 340px;
+}
+.div__below_2{
+    padding: 15px;
+}
+
+.img_below{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.div__below_flex{
+    display: flex;
+    padding: 15px;
+    color: #757575;
+    font-size: 13px;
+    
+}
+.div__below_flex button{
+    color: #757575;
+    border:solid #757575 1px;
+    font-size: 12px;
+    padding: 2px;
+
+}
+.area__detalles{
+    width:100%;
+}
+.area__delete{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 15px 5px 5px 0;
+
+}
+
 
 
 /* esta parte es sobre el la busqueda*/
@@ -278,6 +321,8 @@ a .carrito{
 .b-1{
     height:70vh;
 }
+
+
 /**/
 article {
     margin:15px;
@@ -365,6 +410,7 @@ article {
 .descripción p {
     line-height: 24px;
 }
+
 .descripción a {
     text-decoration-line: none;
     color:#0496c9;
@@ -575,3 +621,7 @@ select {
 
     }
 }
+
+
+
+

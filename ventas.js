@@ -1,11 +1,16 @@
-const agregar = document.querySelector(".yellow")
 
+const agregar = document.querySelector(".yellow")
 const blue = document.querySelector(".blue")
 const cantidad = document.querySelector(".cantidad__")
 let carritotext = document.querySelectorAll(".carrito__texto")
 const nav__right__below = document.querySelector(".nav__right-below")
 let compras = []
-pusharticulo ()
+
+
+
+
+
+
 fetch("productos.json")
 .then(responsive => responsive.json())
 .then(data => {
@@ -38,7 +43,8 @@ fetch("productos.json")
     const desa = document.createElement("div")
     desa.classList.add(`desa`)
     desa.innerHTML = `<h3>${desamoni.nombre}</h3>0.0  <a href="">Escribe una Opinión</a> <h5>Descripción </h5>
-     <p> ${desamoni.descripción}</p><strong>5 Años de Garantia.</strong><br><br><a href=""> leer mas </a>`
+     ${desamoni.descripción}<strong>5 Años de Garantia.</strong><br><br><a href=""> leer mas </a>`
+    
 
     descripción.appendChild(desa)
     //esta es la parte de desarrollo 
@@ -47,6 +53,7 @@ fetch("productos.json")
     const precio__1 = document.querySelector(".precio__1")
     precio__1.innerHTML = `RD$ ${desamoni.precio}`
 
+    /*funcion de muscador*/
     function buscar(){
         const escrito = barra.value.toLowerCase()
         if (escrito.length > 0) {
@@ -97,26 +104,28 @@ fetch("productos.json")
     })
         /* anadir precio en el carrito */ 
         agregar.addEventListener("click", ()=>{
-          
+                
+                
                 let cantidad1 = cantidad.value
                 var multiplicación = parseInt(cantidad1) * desamoni.precio
-                let articulo = {"id": desamoni.id, "cantidad":cantidad1, "photo":desamoni.photo}
+                let articulo = {"id": desamoni.id, "cantidad":cantidad1, "photo":desamoni.photo, "nombre":desamoni.nombre, "precio": desamoni.precio}
+                const yaEsta = compras.some(art => art.id == articulo.id)
                 
 
-                compras.forEach(art =>{
-                    if (art.id == articulo.id){
+                    if (yaEsta){
                         console.log("el articulo ya existe")
 
                     }
                     else{
                         compras.push(articulo)
-                        pusharticulo()
+                        location.reload()
+                        vacio.textContent = " "
 
                     }
-                })
+             
     
-
-
+                    
+                    save()
                     return articulo
         
         })
@@ -180,6 +189,8 @@ document.addEventListener("click",()=>{
 })
 
 /* agregar el pinche carrito culero que me tiene jarto */ 
+
+
 window.addEventListener("resize",()=>{
     if(window.matchMedia("(max-width: 770px)").matches){
         barra__770px.appendChild(carritos)
@@ -191,37 +202,111 @@ window.addEventListener("resize",()=>{
 
 })
 
+window.addEventListener("load",()=>{
+    if(window.matchMedia("(max-width: 770px)").matches){
+        barra__770px.appendChild(carritos)
+    }
+    else{
+        nav_1.appendChild(carritos)
+
+    }
+
+})
+
+
+let vacio = document.createElement("p")
 
 /*FUNCIÓN DE AGREGAR ARTICULOS EN EL NAV-RIGHT */ 
 function pusharticulo (){
     if (compras.length >= 1){
-        compras.forEach(art =>{
+        compras.forEach((art,index) =>{
             let div__below = document.createElement("div")
             div__below.classList.add("div__below")
-            div__below.innerHTML = `<div><img class src = "${art.photo}"></div>   <div ><div></div></div> `
+            div__below.innerHTML = `
+            <div class="div__below_flex">
+
+               <div>
+                 <img class="img_below" src = "${art.photo}">
+               </div>
+
+               <div class = "area__detalles">
+                 <a>${art.nombre} </a>
+                 <div class="area__delete">
+                 <button class="button__delete">x eliminar</button> ${art.cantidad}x${art.precio}
+                 </div>
+                </div>
+
+            </div> `
+            const button__delete = div__below.querySelector(".button__delete")
+            let button__delete_existe = true
+            if (button__delete_existe) {
+                            /* eliminar elemento del array*/
+                
+                 button__delete.addEventListener("click",()=>{
+                compras.splice(index,1)
+                div__below.innerHTML =``
+                
+                save()
+                
+
+        })
+                
+            }
+            else{
+                console.log("por ahora no existe")
+            }
+
+
             nav__right__below.appendChild(div__below)
             
         })
+        
         /*ver carito de compras*/ 
+        const div__below_2 = document.createElement("div")
+        div__below_2.classList.add("div__below_2")
         const vercarito = document.createElement("button")
         vercarito.textContent = "Ver carrito de Compras"
         vercarito.classList.add("vercarito")
-        nav__right__below.appendChild(vercarito)
+        div__below_2.appendChild(vercarito)
         /*Pago seguro*/
         const pagoSeguro = document.createElement("button")
         pagoSeguro.textContent = "Pago Seguro"
         pagoSeguro.classList.add("pagoseguro")
-        nav__right__below.appendChild(pagoSeguro)
+        div__below_2.appendChild(pagoSeguro)
         
-       
-
-
-      
+        let verPago = nav__right__below.contains(div__below_2)
+        if (!verPago){
+            nav__right__below.appendChild(div__below_2)
+        }
+        else{
+            console.log("ya lo tiene")
+        }
     }
+
     else{
-        let vacio = document.createElement("p")
+        
         vacio.textContent ="Su carro esta vacío, por favor siga navegando en ShopMundo para añadir nuevos productos a su carro ..."
         vacio.classList.add("vacio")
         nav__right__below.appendChild(vacio)
+        return vacio
     }
+
 }
+
+
+
+function save (){
+    localStorage.setItem("comprasjj",JSON.stringify(compras))
+}
+
+function restore (){
+    let datos = localStorage.getItem("comprasjj")
+    if (datos){
+        compras = JSON.parse(datos)
+        pusharticulo ()
+    }
+   
+}
+
+restore ()
+
